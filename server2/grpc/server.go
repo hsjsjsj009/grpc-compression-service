@@ -10,10 +10,6 @@ import (
 	"strings"
 )
 
-const (
-	port = ":7001"
-)
-
 type server struct {
 	compression.UnimplementedCompressionServer
 	channel *amqp.Channel
